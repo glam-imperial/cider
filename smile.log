@@ -1,0 +1,24 @@
+[ 27.12.2020 - 13:46:34 ]
+    (MSG) [2] SMILExtract: openSMILE starting!
+[ 27.12.2020 - 13:46:34 ]
+    (MSG) [2] SMILExtract: config file is: /vol/bitbucket/aeg19/opensmile/config/compare16/ComParE_2016.conf
+[ 27.12.2020 - 13:46:34 ]
+    (MSG) [2] cComponentManager: successfully registered 103 component types.
+[ 27.12.2020 - 13:46:34 ]
+    (MSG) [2] instance 'lldsink': No filename given, disabling this sink component.
+[ 27.12.2020 - 13:46:34 ]
+    (MSG) [2] instance 'lldhtksink': No filename given, disabling this sink component.
+[ 27.12.2020 - 13:46:34 ]
+    (MSG) [2] instance 'lldarffsink': No filename given, disabling this sink component.
+[ 27.12.2020 - 13:46:34 ]
+    (MSG) [2] instance 'arffsink': No filename given, disabling this sink component.
+[ 27.12.2020 - 13:46:34 ]
+    (MSG) [2] instance 'htksink': No filename given, disabling this sink component.
+[ 27.12.2020 - 13:46:34 ]
+    (MSG) [2] cComponentManager: successfully finished createInstances (48 component instances were finalised, 1 data memories were finalised)
+[ 27.12.2020 - 13:46:34 ]
+    (MSG) [2] cComponentManager: starting single thread processing loop
+[ 27.12.2020 - 13:46:34 ]
+    (WRN) [2] cComponentManager: The following component(s) could not perform any work because destination levels are full but no other component performed any work either: is13_energy is13_audspecSum is13_audspecRastaSum. Processing will possibly be incomplete. For more details, enable the execDebug option of cComponentManager.
+[ 27.12.2020 - 13:46:34 ]
+    (MSG) [2] cComponentManager: Processing finished! System ran for 471 ticks.

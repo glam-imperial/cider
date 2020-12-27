@@ -1,0 +1,11 @@
+torch
+torchvision
+numpy
+pandas
+wandb
+sklearn
+tqdm
+argparse
+matplotlib
+librosa
+scipy

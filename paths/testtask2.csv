@@ -1,0 +1,9 @@
+,path,label,id
+92,/vol/bitbucket/hgc19/COVID_Audio_Diagnosis/KDD_paper_data/covidwebwithcough/2020-04-15-13_21_10_153301/audio_file_breathe.wav,1,153301
+93,/vol/bitbucket/hgc19/COVID_Audio_Diagnosis/KDD_paper_data/covidwebwithcough/2020-04-15-13_21_10_153301/audio_file_cough.wav,1,153301
+112,/vol/bitbucket/hgc19/COVID_Audio_Diagnosis/KDD_paper_data/healthywebwithcough/2020-04-08-07_18_33_658425/audio_file_breathe.wav,0,658425
+113,/vol/bitbucket/hgc19/COVID_Audio_Diagnosis/KDD_paper_data/healthywebwithcough/2020-04-08-07_18_33_658425/audio_file_cough.wav,0,658425
+144,/vol/bitbucket/hgc19/COVID_Audio_Diagnosis/KDD_paper_data/healthywebwithcough/2020-04-10-16_31_45_878885/audio_file_breathe.wav,0,878885
+145,/vol/bitbucket/hgc19/COVID_Audio_Diagnosis/KDD_paper_data/healthywebwithcough/2020-04-10-16_31_45_878885/audio_file_cough.wav,0,878885
+156,/vol/bitbucket/hgc19/COVID_Audio_Diagnosis/KDD_paper_data/healthywebwithcough/2020-04-09-13_18_07_699528/audio_file_breathe.wav,0,699528
+157,/vol/bitbucket/hgc19/COVID_Audio_Diagnosis/KDD_paper_data/healthywebwithcough/2020-04-09-13_18_07_699528/audio_file_cough.wav,0,699528

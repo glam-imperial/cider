@@ -1,0 +1,22 @@
+{
+    "lr": 0.0001,
+    "dropout": false,
+    "depth_scale": 1,
+    "batch_size": 16,
+    "wsz": 8,
+    "nfft": 1024,
+    "sr": 24000,
+    "logger": "wandb",
+    "save_model_topk": 3,
+    "do_train": true,
+    "do_eval": true,
+    "eval_type": "maj_vote",
+    "task": "task1",
+    "noise": true,
+    "masking": true,
+    "pitch_shift": true,
+    "cross_val": true,
+    "location": "bitbucket",
+    "saved_model_dir": "",
+    "breathcough": true
+}
