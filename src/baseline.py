@@ -12,9 +12,9 @@ def extract_smile():
     # Instructions:
     # 1. Download and build opensmile using insructions here: https://github.com/audeering/opensmile
     # 2. Add the smilextract to path (found here for me: /vol/bitbucket/aeg19/opensmile/build/progsrc/smilextract)
-    save_file_dir = '/vol/bitbucket/aeg19/COVID_Audio_Diagnosis/smile/'
-    csv_path = '/vol/bitbucket/aeg19/COVID_Audio_Diagnosis/paths/cross_val/all.csv'
-    config_path = '/vol/bitbucket/aeg19/opensmile/config/compare16/ComParE_2016.conf'
+    save_file_dir = '/vol/bitbucket/aeg19/COVID_Audio_Diagnosis/smile/'     # Path to save SMILE features
+    csv_path = '/vol/bitbucket/aeg19/COVID_Audio_Diagnosis/paths/cross_val/all.csv'     # File containing paths of all .wav files
+    config_path = '/vol/bitbucket/aeg19/opensmile/config/compare16/ComParE_2016.conf'       # Path to ComParE config file for extracting SMILE features
 
     df = pd.read_csv(csv_path)[['path']]
     df.columns = ['data_path']
@@ -34,8 +34,8 @@ def extract_smile():
         # Save dest. path
         df['smile_features_path'][row] = dest_path
 
-        # if row % 5 == 0:
-        #     print('\n\nROW #:\t',row,'\n\n`')
+        if row % 5 == 0:
+            print('\n\nROW #:\t',row,'\n\n`')
 
     create_features_csv(df)
 

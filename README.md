@@ -1,2 +1,5 @@
-# COVID_Audio_Diagnosis
-Attempts to identify positive COVID cases from respiratory audio signals obtained from mobile devices.
+# COVID-19 Identification ResNet (CIdeR)
+
+Repo for classification of COVID-19 using cough and breath audio samples.
+
+More details to follow.
