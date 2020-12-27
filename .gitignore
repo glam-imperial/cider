@@ -6,7 +6,6 @@ figs/
 spec_data/
 *.out
 wandb/
-args.txt
 commands.txt
 models
 __pycache__
@@ -16,3 +15,8 @@ eval_type_results.txt
 smile/
 simle.log
 submit.pbs
+paths/smile_features/
+.cache
+.config
+.nv
+papers

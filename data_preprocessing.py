@@ -25,22 +25,6 @@ class COVID_dataset(Dataset):
                  pitch_shift=False,
                  cross_val=False,
                  breathcough=False):
-        # if task == 'all':
-        #     fns = ['train.csv', 'test.csv', 'dev.csv']
-        #     if not all(os.path.exists('paths/'+fn) for fn in fns):
-        #         # create_csv()
-        #         pass
-        #     self.data_index = pd.read_csv(f"paths/{dset}.csv")
-        # else:
-        #     fns=[
-        #         'train' + str(task) + '.csv'
-        #         'dev' + str(task) + '.csv'
-        #         'test' + str(task) + '.csv'
-        #     ]
-        #     if not all(os.path.exists('paths/' + fn) for fn in fns) and not cross_val:
-        #         # create_csv(task=task, cross_val=cross_val)
-        #         pass
-        #     self.data_index = pd.read_csv(f"paths/{dset}{task}.csv")
         df = pd.read_csv(os.path.join('paths/cross_val', task+'.csv'))
         rows = df[df.fold.isin(folds)].index.tolist()
         np.random.shuffle(rows)
@@ -120,11 +104,7 @@ class COVID_dataset(Dataset):
                 elif flag == 'breath':
                     return [torch.cat([j, i], dim=0) for i, j in zip(chunks, chunks_2)], label
 
-
         return chunks, label
-
-
-
 
     def load_process(self, audio_path):
         # load the data
@@ -266,7 +246,6 @@ class COVID_dataset(Dataset):
                 'This should not be a possibility - path should contain breathe of cough'
             )
 
-
     def nth_repl(self, s, sub, repl, n):
         find = s.find(sub)
         # If find is not -1 we have found at least one match for the substring
@@ -280,7 +259,6 @@ class COVID_dataset(Dataset):
         if i == n:
             return s[:find] + repl + s[find + len(sub):]
         return s
-
 
 
 if __name__ == "__main__":

@@ -156,20 +156,20 @@ def train_svm(task):
 
 if __name__ == '__main__':
     # extract_smile()
-    # all_results = {}
-    # for task in ['task1', 'task2', 'task3', 'all']:
-    #     all_results[task] = train_svm(task)
+    all_results = {}
+    for task in ['task1', 'task2', 'task3', 'all']:
+        all_results[task] = train_svm(task)
 
-    # print('\n\n****** All task results ******\n\n')
-    # [print(k,'\t',v) for k,v in all_results.items()]
+    print('\n\n****** All task results ******\n\n')
+    [print(k,'\t',v) for k,v in all_results.items()]
 
-    # Results used in the paper
-    results = {
-        'task1': {'roc_auc': [0.6968896713615024, 0.6968896713615024, 0.6968896713615024], 'UAR': [0.6765698356807512, 0.6765698356807512, 0.6765698356807512]},
-        'task2': {'roc_auc': [0.6354166666666666, 0.5625, 0.6875], 'UAR': [0.5625, 0.5520833333333333, 0.6354166666666667]},
-        'task3': {'roc_auc': [0.5636363636363637, 0.55, 0.5636363636363637], 'UAR': [0.5, 0.5181818181818182, 0.5]},
-        'all': {'roc_auc': [0.7311007957559681, 0.7026230474506336, 0.7280798703212497], 'UAR': [0.6782714412024757, 0.637783672266431, 0.6463675213675213]},
-    }
-    for task, v in results.items():
-        for metric, scores in v.items():
-            print(task, '\t', metric, f"\tmean: {np.mean(scores)}\tstd: {np.std(scores)}")
+    # # Results used in the paper
+    # results = {
+    #     'task1': {'roc_auc': [0.6968896713615024, 0.6968896713615024, 0.6968896713615024], 'UAR': [0.6765698356807512, 0.6765698356807512, 0.6765698356807512]},
+    #     'task2': {'roc_auc': [0.6354166666666666, 0.5625, 0.6875], 'UAR': [0.5625, 0.5520833333333333, 0.6354166666666667]},
+    #     'task3': {'roc_auc': [0.5636363636363637, 0.55, 0.5636363636363637], 'UAR': [0.5, 0.5181818181818182, 0.5]},
+    #     'all': {'roc_auc': [0.7311007957559681, 0.7026230474506336, 0.7280798703212497], 'UAR': [0.6782714412024757, 0.637783672266431, 0.6463675213675213]},
+    # }
+    # for task, v in results.items():
+    #     for metric, scores in v.items():
+    #         print(task, '\t', metric, f"\tmean: {np.mean(scores)}\tstd: {np.std(scores)}")
