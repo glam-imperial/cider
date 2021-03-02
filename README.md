@@ -4,7 +4,9 @@ Repo for the classification of COVID-19 using cough and breath audio samples fro
 
 <p align="center">
   <img height="200" src="figures/network_architecture.png"/>
-  <figcaption align="middle"> Schematic of the CIdeR architecture</figcaption>
+  <br>
+  <em>Schematic of the CIdeR architecture</em>
+  <!-- <figcaption align="middle"> Schematic of the CIdeR architecture</figcaption> -->
 </p>
 
 ## Contents:
