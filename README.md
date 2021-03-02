@@ -2,7 +2,10 @@
 
 Repo for the classification of COVID-19 using cough and breath audio samples from [End-2-End COVID-19 Detection from Breath & Cough Audio](https://arxiv.org/pdf/2102.08359.pdf).
 
-<figure><center><img src="figures/network_architecture.png" alt="drawing" width="400"/><figcaption>Schematic of the CIdeR architecture</figcaption></center></figure>
+<p align="center">
+  <img height="200" src="figures/network_architecture.png"/>
+  <center><figcaption>Schematic of the CIdeR architecture</figcaption></center>
+</p>
 
 ## Contents:
 
