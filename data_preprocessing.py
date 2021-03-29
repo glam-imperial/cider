@@ -112,7 +112,7 @@ class COVID_dataset(Dataset):
         # perform pitch shift:
         if self.pitch_shift:
             step = np.random.uniform(-6,6)
-            sample_signal = librosa.effects.pitch_shift(
+            signal = librosa.effects.pitch_shift(
                 signal, sample_rate, step)
 
         # For train, sample random window size from audiofile
